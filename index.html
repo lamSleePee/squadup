@@ -6,14 +6,21 @@
     <title>SquadUp</title>
     <!-- Instant redirect using meta refresh -->
     <meta http-equiv="refresh" content="0; url=https://forms.gle/SuCPACNZBuVbGMjZ6">
-    <!-- JavaScript redirect as backup for instant redirect -->
+    <!-- JavaScript redirect for instant redirect (executes immediately) -->
     <script>
-        window.location.replace("https://forms.gle/SuCPACNZBuVbGMjZ6");
+        (function() {
+            window.location.replace("https://forms.gle/SuCPACNZBuVbGMjZ6");
+        })();
     </script>
 </head>
-<body>
+<body style="margin:0;padding:0;background:#fff;">
     <!-- Fallback link in case redirects don't work -->
-    <p>Redirecting... <a href="https://forms.gle/SuCPACNZBuVbGMjZ6">Click here if you are not redirected</a></p>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=https://forms.gle/SuCPACNZBuVbGMjZ6">
+    </noscript>
+    <p style="text-align:center;padding:20px;font-family:Arial,sans-serif;">
+        Redirecting... <a href="https://forms.gle/SuCPACNZBuVbGMjZ6">Click here if you are not redirected</a>
+    </p>
 </body>
 </html>
 
